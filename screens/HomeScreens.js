@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, ActivityIndicator, StyleSheet, Keyboard } from 'react-native';
 
-const API_KEY = 'e3719b5ed542c5709028bf593a831f96';
+const apiKey = process.env.API_KEY;
 
 const WeatherApp = () => {
     const [search, setSearch] = useState('');
@@ -14,7 +14,7 @@ const WeatherApp = () => {
         setIsLoading(true);
         try {
             const response = await fetch(
-                `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${API_KEY}`
+                `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${apiKey}`
             );
             if (!response.ok) {
                 setNotFound(true);

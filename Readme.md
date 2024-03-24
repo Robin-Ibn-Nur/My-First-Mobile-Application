@@ -25,7 +25,7 @@ Upon launching the application, users can view weather information for a specifi
 
 Include screenshots of the application to provide an overview of the user interface. 
 
-<img width="500" height="550" src="assets/ScreenShot.jpg" alt="" />
+<img width="300" height="550" src="assets/ScreenShot.jpg" alt="" />
 
 ## Example
 
